@@ -58,3 +58,35 @@ footer {
   color: #aaa;
   margin-top: 30px;
 }
+/* ADDED: Enhance card contrast and text color for readability */
+.about, .posts {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* subtle shadow */
+  color: #333333; /* dark text for better readability on white */
+}
+
+/* ADDED: Style for highlighted/emphasized text */
+.highlight, strong {
+  color: #00bcd4; /* teal accent for emphasis */
+}
+
+/* ADDED: Link styling to match accent color */
+a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ADDED: Optional border highlight for profile pic */
+.profile-pic {
+  border: 3px solid #00bcd4;
+}
+
+/* ADDED: Responsive text center for small devices */
+@media (max-width: 600px) {
+  .about-text {
+    text-align: center;
+  }
+}
