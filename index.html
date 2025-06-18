@@ -6,6 +6,25 @@
   <title>My Personal Blog</title>
   <link rel="stylesheet" href="style.css">
 </head>
+<script>
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const projects = document.querySelectorAll('.project');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      const filter = button.getAttribute('data-filter');
+
+      projects.forEach(project => {
+        const tech = project.getAttribute('data-tech');
+        project.style.display = (filter === 'all' || tech === filter) ? 'block' : 'none';
+      });
+    });
+  });
+</script>
+
 <body>
   <header>
     <h1>Welcome to My Blog</h1>
@@ -40,6 +59,43 @@
       <h3>💻 My First JavaScript Project</h3>
       <p>I built a simple calculator using JavaScript. It was fun figuring out how functions work...</p>
     </article>
+<h2>My Projects</h2>
+
+  <!-- 🔽 INSERT THIS FILTER UI -->
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="JavaScript">JavaScript</button>
+    <button class="filter-btn" data-filter="Unity">Unity</button>
+    <button class="filter-btn" data-filter="Python">Python</button>
+    <button class="filter-btn" data-filter="Design">Design</button>
+  </div>
+
+  <!-- 🔽 INSERT THESE PROJECT ENTRIES -->
+  <div class="project" data-tech="JavaScript">
+    <h3>🌐 Portfolio Website</h3>
+    <p>A responsive personal website...</p>
+  </div>
+
+  <div class="project" data-tech="Unity">
+    <h3>🎮 Unity Math Adventure</h3>
+    <p>An educational 3D game...</p>
+  </div>
+
+  <div class="project" data-tech="JavaScript">
+    <h3>📊 Interactive Data Dashboard</h3>
+    <p>Dashboard using Chart.js and API...</p>
+  </div>
+
+  <div class="project" data-tech="Design">
+    <h3>📱 Weather App UI</h3>
+    <p>Figma + Tailwind CSS design...</p>
+  </div>
+
+  <div class="project" data-tech="Python">
+    <h3>🧪 Machine Learning Project</h3>
+    <p>Email spam classifier using Scikit-learn...</p>
+  </div>
+
   </section>
 
   <footer>

@@ -91,3 +91,40 @@ a:hover {
     text-align: center;
   }
 }
+
+/* 🔽 ADDED: Filter Button Styles */
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #eee;
+  color: #333;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: #00bcd4;
+  color: #fff;
+}
+
+/* 🔽 ADDED: Project Card Styling */
+.project {
+  background: #f9f9f9;
+  border-left: 5px solid #00bcd4;
+  padding: 1rem;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+.project h3 {
+  margin-top: 0;
+  color: #2c5364;
+}
