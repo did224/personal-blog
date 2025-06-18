@@ -129,3 +129,12 @@ a:hover {
   margin-top: 0;
   color: #2c5364;
 }
+
+.contact-form input,
+.contact-form textarea {
+  font-size: 1rem;
+}
+
+.contact-form button:hover {
+  background-color: #008c9e;
+}
