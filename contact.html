@@ -8,6 +8,82 @@
 
   <!-- Font Awesome CDN for icons -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    /* Page-specific tweaks without touching your global CSS */
+    .about {
+      background: #ffffff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      border-radius: 10px;
+      margin: 30px auto;
+      padding: 2rem;
+      max-width: 700px;
+    }
+
+    .about h2 {
+      margin-bottom: 1rem;
+      color: #2c5364;
+      font-size: 1.6rem;
+      border-bottom: 2px solid #00bcd4;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .about ul li {
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .about ul li i {
+      width: 25px;
+      color: #00bcd4;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 1rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      transition: border 0.3s;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #00bcd4;
+      outline: none;
+    }
+
+    .contact-form button {
+      padding: 12px;
+      background-color: #00bcd4;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+    }
+
+    .contact-form button:hover {
+      background-color: #008ca4;
+    }
+
+    /* Responsive tweak */
+    @media (max-width: 600px) {
+      .about {
+        padding: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -34,11 +110,11 @@
 
   <section class="about">
     <h2>Send a Message</h2>
-    <form action="#" method="POST" class="contact-form" style="display: flex; flex-direction: column; gap: 10px; max-width: 500px;">
-      <input type="text" name="name" placeholder="Your Name" required style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;" />
-      <input type="email" name="email" placeholder="Your Email" required style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;" />
-      <textarea name="message" rows="5" placeholder="Your Message" required style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;"></textarea>
-      <button type="submit" style="padding: 10px; background-color: #00bcd4; color: white; border: none; border-radius: 5px; cursor: pointer;">
+    <form action="#" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">
         <i class="fas fa-paper-plane"></i> Send Message
       </button>
     </form>
