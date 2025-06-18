@@ -17,6 +17,26 @@ header {
   text-align: center;
 }
 
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Makes it responsive on small screens */
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.about-text {
+  max-width: 600px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
 .about, .posts {
   padding: 1rem 2rem;
   background: #fff;
