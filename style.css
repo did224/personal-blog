@@ -31,6 +31,7 @@ header {
   object-fit: cover;
   border-radius: 50%;
   flex-shrink: 0;
+  border: 3px solid #00bcd4; /* Optional border highlight for profile pic */
 }
 
 .about-text {
@@ -38,12 +39,15 @@ header {
   font-size: 1rem;
   line-height: 1.6;
 }
+
 .about, .posts {
   padding: 1rem 2rem;
   background: #fff;
   margin: 20px auto;
   max-width: 800px;
   border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* subtle shadow */
+  color: #333333; /* dark text for better readability on white */
 }
 
 img {
@@ -59,40 +63,36 @@ footer {
   color: #aaa;
   margin-top: 30px;
 }
-/* ADDED: Enhance card contrast and text color for readability */
-.about, .posts {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* subtle shadow */
-  color: #333333; /* dark text for better readability on white */
-}
 
-/* ADDED: Style for highlighted/emphasized text */
+/* Style for highlighted/emphasized text */
 .highlight, strong {
   color: #00bcd4; /* teal accent for emphasis */
 }
 
-/* ADDED: Link styling to match accent color */
+/* 🔽 UPDATED: Link styling to look like buttons */
 a {
-  color: #00bcd4;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #00bcd4;
+  color: #fff;
   text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  margin: 0.2rem;
 }
 
 a:hover {
-  text-decoration: underline;
+  background-color: #0097a7;
 }
 
-/* ADDED: Optional border highlight for profile pic */
-.profile-pic {
-  border: 3px solid #00bcd4;
-}
-
-/* ADDED: Responsive text center for small devices */
+/* Responsive text center for small devices */
 @media (max-width: 600px) {
   .about-text {
     text-align: center;
   }
 }
 
-/* 🔽 ADDED: Filter Button Styles */
+/* 🔽 Filter Button Styles */
 .filter-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -116,7 +116,7 @@ a:hover {
   color: #fff;
 }
 
-/* 🔽 ADDED: Project Card Styling */
+/* 🔽 Project Card Styling */
 .project {
   background: #f9f9f9;
   border-left: 5px solid #00bcd4;
@@ -124,6 +124,7 @@ a:hover {
   margin-bottom: 20px;
   border-radius: 6px;
 }
+
 .project h3 {
   margin-top: 0;
   color: #2c5364;
