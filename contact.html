@@ -6,11 +6,7 @@
   <title>Contact Me</title>
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Font Awesome CDN for icons -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
   <style>
-    /* Page-specific tweaks without touching your global CSS */
     .about {
       background: #ffffff;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -30,14 +26,15 @@
     }
 
     .about ul li {
-      margin: 10px 0;
+      margin: 12px 0;
       display: flex;
       align-items: center;
     }
 
-    .about ul li i {
-      width: 25px;
-      color: #00bcd4;
+    .about ul li img {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
     }
 
     .contact-form {
@@ -77,7 +74,6 @@
       background-color: #008ca4;
     }
 
-    /* Responsive tweak */
     @media (max-width: 600px) {
       .about {
         padding: 1rem;
@@ -99,12 +95,30 @@
   <section class="about">
     <h2>Get in Touch</h2>
     <ul style="list-style: none; padding: 0; font-size: 1.1rem;">
-      <li><i class="fas fa-envelope"></i> Email: <a href="mailto:aidid4543@gmail.com">aidid4543@gmail.com</a></li>
-      <li><i class="fas fa-map-marker-alt"></i> Location: Seremban, Negeri Sembilan</li>
-      <li><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/fakelink" target="_blank">LinkedIn</a></li>
-      <li><i class="fab fa-github"></i> <a href="https://github.com/fakelink" target="_blank">GitHub</a></li>
-      <li><i class="fab fa-facebook"></i> <a href="https://facebook.com/aididjohani" target="_blank">Facebook</a></li>
-      <li><i class="fab fa-instagram"></i> <a href="https://instagram.com/didid_1f" target="_blank">@didid_1f</a></li>
+      <li>
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email Icon">
+        Email: <a href="mailto:aidid4543@gmail.com">aidid4543@gmail.com</a>
+      </li>
+      <li>
+        <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Location Icon">
+        Location: Seremban, Negeri Sembilan
+      </li>
+      <li>
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Icon">
+        <a href="https://linkedin.com/in/fakelink" target="_blank">LinkedIn</a>
+      </li>
+      <li>
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Icon">
+        <a href="https://github.com/fakelink" target="_blank">GitHub</a>
+      </li>
+      <li>
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook Icon">
+        <a href="https://facebook.com/aididjohani" target="_blank">Facebook</a>
+      </li>
+      <li>
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram Icon">
+        <a href="https://instagram.com/didid_1f" target="_blank">@didid_1f</a>
+      </li>
     </ul>
   </section>
 
@@ -115,7 +129,8 @@
       <input type="email" name="email" placeholder="Your Email" required />
       <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
       <button type="submit">
-        <i class="fas fa-paper-plane"></i> Send Message
+        <img src="https://cdn-icons-png.flaticon.com/512/786/786205.png" alt="Send Icon" style="width: 18px; vertical-align: middle; margin-right: 6px;">
+        Send Message
       </button>
     </form>
   </section>
