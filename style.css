@@ -3,7 +3,11 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-image: url('background image.jpg');
+  background-size: cover; /* or contain */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 header {
